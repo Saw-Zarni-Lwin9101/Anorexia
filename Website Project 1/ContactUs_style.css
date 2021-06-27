@@ -5,6 +5,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 .first{
@@ -23,6 +24,10 @@ header,section,footer{
 }
 
 
+header{
+	padding: 10px 0;
+	box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.2);
+}
 
 header{
 	
@@ -47,20 +52,28 @@ h1{
 }
 
 .nav{
-	/*display: flex;*/
+	display: flex;
 	/*justify-content: flex-end;*/
 	align-items: center;
 	padding: 10px 0;
 	list-style-type: none;
 	margin: 0 5%;
+	overflow: hidden;
 
 }
 
-/*.logo{
-	margin-right: auto;
-	padding: 10px 0 0 5%;
+.logo{
+	/*display: none;*/
+	background-color: red;
+	padding-left: 0px;
+	/*margin-right: auto;*/
+	width: 5em;
+	margin: 3px auto 0 5px;
+
+	/*padding: 10px 0 0 3%;*/
 	z-index: 10;
-}*/
+}
+
 
 .nav li{
 	display: inline-block;
@@ -77,7 +90,7 @@ h1{
 	padding: 10px;
 }
 
-.nav li a:hover{
+.nav li a:hover,.dropdown:hover .dropbtn{
 	background-color: #f8f9fa;
 	color: #8955d0;
 	border-radius: 5px;
@@ -98,7 +111,7 @@ h1{
 
 
 .part_1{
-	margin-top: 100px;
+	margin-top: 120px;
 	display: flex;
 	flex-direction: row;
 	padding: 20px;
@@ -146,9 +159,63 @@ padding: 20px;
 		flex-direction: column;
 	}
 	.flex_2{
+		margin-top: 30px;
 		width: 100%;
 	}
 }
+
+.dropdown{
+	display: flex;	
+}
+
+.dropbtn, .dropdown-content a{
+	transition: all 0.3s ease 0s;
+}
+
+.dropdown, .dropbtn{
+	font-size: 16px;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	color: #f8f9fa;
+	background-color: #8955d0;
+	/*padding: 10px 16px;*/
+	font-family: inherit;
+}
+
+.dropbtn{
+	padding: 10px;
+	/*background-color: red;*/
+}
+
+.dropdown-content{
+	margin-top: 40px;
+	display: none;
+	position: absolute;
+	background-color: #f8f9fa;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	border-radius: 5px;
+}
+
+.dropdown-content a{
+	color: #8955d0;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover{
+	background-color: #8955d0;
+	color: #f8f9fa;
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+
 
 footer{
 	margin: 0;
