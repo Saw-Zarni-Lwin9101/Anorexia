@@ -59,7 +59,7 @@ h1{
 	list-style-type: none;
 	margin: 0 5%;
 	overflow: hidden;
-
+	z-index: 5;
 }
 
 .logo{
@@ -121,6 +121,7 @@ h1{
 
 .dropdown{
 	display: flex;
+	z-index: 5;
 }
 
 .dropdown{

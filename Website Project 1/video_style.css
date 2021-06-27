@@ -1,0 +1,99 @@
+video{
+	width:45% ;
+	/*background-color: red;*/
+	padding: 20px;
+	margin: 0 auto;
+	/*z-index: 1;*/
+}
+.vid{
+	display: flex;
+	flex-direction: row;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	/* Styles */.vid{
+		flex-direction: column;
+
+	}
+	video{
+		width: 100%;
+		/*padding: 100px;*/
+	}
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	footer{
+	margin: 0;
+	border-radius: 0;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+}
+
+.dropdown{
+	display: flex;
+	z-index: 5;
+}
+
+.dropdown{
+	/*float: left;*/
+	overflow: hidden;
+	z-index: 5;
+}
+
+.dropdown, .dropbtn{
+	font-size: 16px;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	color: #f8f9fa;
+	background-color: #8955d0;
+	/*padding: 10px 16px;*/
+	font-family: inherit;
+	z-index: 5;
+}
+
+.dropbtn{
+	padding: 10px;
+	/*background-color: red;*/
+	z-index: 5;
+}
+
+.dropdown-content{
+	margin-top: 40px;
+	display: none;
+	position: absolute;
+	background-color: #f8f9fa;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 5;
+	border-radius: 5px;
+
+}
+
+.dropdown-content a{
+	color: #8955d0;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	z-index: 5;
+}
+
+.dropdown-content a:hover{
+	background-color: #8955d0;
+	color: #f8f9fa;
+	z-index: 5;
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+	z-index: 5;
+}
