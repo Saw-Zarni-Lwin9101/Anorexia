@@ -1,22 +1,65 @@
 video{
-	width:45% ;
+	width:50% ;
 	/*background-color: red;*/
 	padding: 20px;
+	display: block;
 	margin: 0 auto;
-	/*z-index: 1;*/
+	z-index: 0;
 }
-.vid{
+.vid_cap{
+	text-align: center;
+}
+/*.vid{
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: red;
+	justify-content: center;
+}*/
+
+
+/*.vid_cap{
+	display: block;
+	
+	background-color: blue;
+	justify-content: center;
+	float: left;
+	margin: 0 auto;
+	text-align: center;
+}*/
+
+/*.vid_1{
+	clear: left;
 }
+
+.vid_2{
+	clear: both;
+}*/
+/*.vid1{
+	order: -1;
+	flex: 1 0 80%;
+}
+
+.vid2{
+	order: -1;
+	flex: 1 0 80%;
+}*/
+
+/*.vid:nth-child(1){order: 1;}
+.vid:nth-child(2){order: 3;}
+.vid:nth-child(3){order: 2;}
+.vid:nth-child(4){order: 4;}*/
+
+
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
-	/* Styles */.vid{
+	/* Styles *//*.vid{
 		flex-direction: column;
 
-	}
+	}*/
 	video{
 		width: 100%;
 		/*padding: 100px;*/
@@ -35,6 +78,16 @@ and (max-device-width : 480px) {
 	width: 100%;
 	text-align: center;
 }
+
+/*.vid_cap{
+	display: block;
+	
+	background-color: blue;
+	justify-content: center;
+	float: left;
+	margin: 0 auto;
+	text-align: center;
+}*/
 }
 
 .dropdown{
@@ -97,3 +150,4 @@ and (max-device-width : 480px) {
 	display: block;
 	z-index: 5;
 }
+
