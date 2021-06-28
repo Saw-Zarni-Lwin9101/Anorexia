@@ -68,7 +68,7 @@ and (max-device-width : 480px) {
 
 @media only screen 
 and (min-device-width : 320px) 
-and (max-device-width : 480px) {
+and (max-device-width : 370px) {
 	footer{
 	margin: 0;
 	border-radius: 0;
@@ -79,6 +79,18 @@ and (max-device-width : 480px) {
 	text-align: center;
 }
 
+@media screen 
+/*and (min-width: 470px)*/
+and (max-width: 720px) {
+	footer{
+	margin: 0;
+	border-radius: 0;
+	/*position: fixed;*/
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
 /*.vid_cap{
 	display: block;
 	
