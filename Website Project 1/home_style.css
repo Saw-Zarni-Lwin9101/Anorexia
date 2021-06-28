@@ -135,6 +135,11 @@ dt{
 	border: 5px solid #353535;
 	color: #353535;
 	padding: 20px;
+
+}
+
+.main_page .text_red{
+	color: red;
 }
 
 @media screen and (max-width: 438px){
@@ -288,6 +293,7 @@ and (max-device-width : 480px) {
 	width: 30%;
 	height: 30%;
 }
+
 	}
 
 @media screen and (max-width: 753px){
@@ -303,5 +309,11 @@ and (max-device-width : 480px) {
 	/*#role_2{
 		margin-top: 0;
 	}*/
+	
+}
+
+.title_bold{
+	/*margin-top: 100px;*/
+	font-weight: bold;
 }
 
