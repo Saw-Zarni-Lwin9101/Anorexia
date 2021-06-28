@@ -252,17 +252,18 @@ footer{
 }
 
 .role_1{
-	flex: 80%;
+	flex: 70%;
 	padding: 20px;
 	/*background-color: blue;*/
 }
 .role_2{
-	flex: 20%;
-	width: 20%;
+	flex: 30%;
+	width: 30%;
 }
 #imfat{
-	width: 20%;
-	height: 20%;
+	margin-top: 100px;
+	width: 30%;
+	height: 30%;
 }
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
@@ -275,11 +276,18 @@ and (max-device-width : 480px) {
 			}
 	.role_2{
 		/*justify-content: center;*/
+		margin-top: 0;
 		width: 50%;
 	}
 	/*#role_2{
 		margin-top: 1000px;
 	}*/
+
+	#imfat{
+	margin-top: 0px;
+	width: 30%;
+	height: 30%;
+}
 	}
 
 @media screen and (max-width: 753px){
