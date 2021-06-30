@@ -67,8 +67,8 @@ h1{
 	background-color: red;
 	padding-left: 0px;
 	/*margin-right: auto;*/
-	width: 5em;
-	margin: 3px auto 0 5px;
+	width: 4em;
+	margin: 3px auto 0 15px;
 
 	/*padding: 10px 0 0 3%;*/
 	z-index: 10;
@@ -243,4 +243,8 @@ footer{
 .contact_btn:hover{
 	background-color: #f8f9fa;
 	color: #8955d0;
+}
+
+.team_member{
+	list-style-type: none;
 }
